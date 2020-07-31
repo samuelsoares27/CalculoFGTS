@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CalculoFGTS.Views.AboutPage"
+             Title="{Binding Title}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <ScrollView Grid.Row="1">
+            <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="10">
+                <Label FontSize="22">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Sobre o Aplicaitvo" FontAttributes="Bold" FontSize="22" />
+                                <Span Text=" " />
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="O Fundo de Garantia do Tempo de Serviço também é descontando da folha de pagamento. 
+                                            O valor é formado pelas contribuições compulsórias do empregador e a alíquota é de 8% em cima do valor  
+                                            total da folha de pagamento. Vale ressaltar que o valor correspondente ao FGTS deve ser  depositado pelo empregador na conta do empregado na Caixa Econômica Federal."/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+                <Label>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <FormattedString.Spans>
+                                <Span Text="Inicialmente criado para Android" />
+                                <Span Text=" " />
+                                <Span Text="" FontAttributes="Bold" />
+                                <Span Text="" />
+                                <Span Text="versão 1.0" FontAttributes="Bold"/>
+                                <Span Text="                   " />
+                                <Span Text="Deixe seu feedback na Play Store."/>
+                            </FormattedString.Spans>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

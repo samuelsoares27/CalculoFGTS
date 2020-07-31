@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:local="clr-namespace:CalculoFGTS"
+             mc:Ignorable="d"
+             x:Class="CalculoFGTS.Views.ItemsPage"
+             x:Name="BrowseItemsPage">
+
+
+        <StackLayout Margin="0,80,0,0" Padding="35">
+            <Label Text="Digite o salário" HorizontalOptions="Center" FontSize="25" TextColor="#1E90FF"/>
+            <Label Text="Valor"/>
+            <Entry x:Name="VALOR" Placeholder="R$ 0.000,00" Keyboard="Numeric" MaxLength="15">
+               <Entry.Behaviors>
+                <local:MascaraMoeda />
+                </Entry.Behaviors>
+            </Entry>
+            <Button x:Name="BOTAO" Text="Calcular" BackgroundColor="#1E90FF" TextColor="White"/>
+        </StackLayout>
+
+</ContentPage>
