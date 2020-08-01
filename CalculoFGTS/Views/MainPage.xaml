@@ -19,7 +19,7 @@
             </x:Arguments>
         </NavigationPage>
         
-        <NavigationPage Title="About">
+        <NavigationPage Title="Sobre">
             <NavigationPage.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">
                     <On Platform="iOS" Value="tab_about.png"/>

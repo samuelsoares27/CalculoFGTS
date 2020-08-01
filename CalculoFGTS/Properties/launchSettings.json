@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CalculoFGTS": {
+      "commandName": "Project",
+      "remoteDebugEnabled": false
+    }
+  }
+}
